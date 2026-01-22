@@ -109,7 +109,7 @@ const categories: EventCategory[] = [
         events: [
             {
                 name: "Tarader Kotha",
-                desc: "Theme: Biswer Golpo/Global Icons",
+                desc: "Theme: Biswer Golpo, Fashion er Canvas e",
                 image: "/assets/events/tarader_kotha.png",
                 slug: "tarader-kotha"
             },
@@ -131,30 +131,30 @@ const EventsGrid = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16 px-2"
                 >
-                    <h2 className="text-brand-orange uppercase tracking-widest font-bold mb-3 text-sm md:text-base">Competing Zones</h2>
-                    <h3 className="text-4xl md:text-6xl font-oswald font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
+                    <h2 className="text-brand-orange uppercase tracking-widest font-bold mb-3 text-xs md:text-base">Competing Zones</h2>
+                    <h3 className="text-3xl md:text-6xl font-oswald font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60 pb-2 leading-tight">
                         Event Categories
                     </h3>
                 </motion.div>
 
                 {/* Tab Navigation */}
-                <div className="flex flex-wrap justify-center gap-4 mb-16">
+                <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 md:mb-16">
                     {categories.map((cat) => (
                         <button
                             key={cat.id}
                             onClick={() => setActiveTab(cat.id)}
                             className={`
-                relative px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300
+                relative px-4 py-2 md:px-6 md:py-3 rounded-full flex items-center gap-2 md:gap-3 transition-all duration-300
                 border border-white/10 hover:border-white/30
                 ${activeTab === cat.id ? "bg-white/10 text-white" : "bg-transparent text-gray-400 hover:text-white hover:bg-white/5"}
               `}
                         >
-                            <span className={`p-1.5 rounded-full ${activeTab === cat.id ? "bg-brand-orange text-black" : "bg-white/10"}`}>
+                            <span className={`p-1 md:p-1.5 rounded-full ${activeTab === cat.id ? "bg-brand-orange text-black" : "bg-white/10"}`}>
                                 {cat.icon}
                             </span>
-                            <span className="font-oswald tracking-wide text-lg">{cat.title}</span>
+                            <span className="font-oswald tracking-wide text-sm md:text-lg whitespace-nowrap">{cat.title}</span>
 
                             {activeTab === cat.id && (
                                 <motion.div

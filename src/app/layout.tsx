@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald, Manrope, Galada } from "next/font/google";
+import { Oswald, Manrope, Galada, Great_Vibes } from "next/font/google";
 import "./globals.css";
 
 const oswald = Oswald({
@@ -18,6 +18,12 @@ const galada = Galada({
   subsets: ["bengali", "latin"],
 });
 
+const greatVibes = Great_Vibes({
+  weight: "400",
+  variable: "--font-great-vibes",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Sanghati 2K26 | Swami Vivekananda University",
   description: "Unity in Rhythm, Heritage in Soul. The Official Cultural Fest of SVU.",
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${oswald.variable} ${manrope.variable} ${galada.variable} antialiased bg-black text-white`}
+        className={`${oswald.variable} ${manrope.variable} ${galada.variable} ${greatVibes.variable} antialiased bg-black text-white`}
       >
         <StarBackground />
         {children}

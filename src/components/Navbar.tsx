@@ -12,7 +12,6 @@ const NAV_LINKS = [
     { name: "Events", href: "#events" },
     { name: "Schedule", href: "#schedule" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Sponsors", href: "#sponsors" },
 ];
 
 const Navbar = () => {

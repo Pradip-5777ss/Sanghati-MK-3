@@ -69,7 +69,11 @@ export default async function EventPage({ params }: Props) {
                             <p className="text-white/60 mb-4">
                                 Secure your spot for {event.name}!
                             </p>
-                            <Link href="/#registration" className="block w-full py-3 text-center bg-brand-orange text-black font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-lg">
+                            <Link
+                                href={event.registrationLink || "/#registration"}
+                                target={event.registrationLink ? "_blank" : "_self"}
+                                className="block w-full py-3 text-center bg-brand-orange text-black font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-lg"
+                            >
                                 Register Now
                             </Link>
                         </div>

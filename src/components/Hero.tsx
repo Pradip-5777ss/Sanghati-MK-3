@@ -14,7 +14,7 @@ const Hero = () => {
     });
 
     useEffect(() => {
-        const targetDate = new Date("2026-01-27T10:00:00").getTime();
+        const targetDate = new Date("2026-01-27T12:00:00").getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
@@ -44,7 +44,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="home" className="relative w-full h-screen min-h-[800px] flex flex-col items-center justify-start overflow-hidden text-center px-4 pt-24 md:pt-32">
+        <section id="home" className="relative w-full h-screen min-h-[880px] flex flex-col items-center justify-start overflow-hidden text-center px-4 pt-24 md:pt-32">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -85,7 +85,7 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
-                    className="text-white/90 text-lg md:text-2xl font-light tracking-[0.2em] uppercase font-sans"
+                    className="text-white/90 text-3xl md:text-5xl font-great-vibes tracking-wide"
                 >
                     Unity in Rhythm, Heritage in Soul
                 </motion.p>

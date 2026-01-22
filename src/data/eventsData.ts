@@ -13,6 +13,7 @@ export interface EventDetail {
     themeList?: string[];
     contactInfo?: string; // Optional
     schedule?: string; // Optional
+    registrationLink?: string; // Optional
 }
 
 export const eventsData: Record<string, EventDetail> = {
@@ -58,7 +59,8 @@ export const eventsData: Record<string, EventDetail> = {
             "Health & Hygiene Awareness – Clean India, personal and public hygiene",
             "Women Safety & Self-Defense – Awareness, courage, empowerment",
             "Patriotism & Social Responsibility – Duties of citizens, nation building"
-        ]
+        ],
+        registrationLink: "https://forms.gle/zJMukGv38KZbVNAm9"
     },
     "megh-mancha": {
         slug: "megh-mancha",
@@ -93,7 +95,8 @@ export const eventsData: Record<string, EventDetail> = {
                     "Overall Impact (10 marks): Engagement, resonance"
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/oD41jJPmduVCHgeL8"
     },
     "plugged-in": {
         slug: "plugged-in",
@@ -142,7 +145,8 @@ export const eventsData: Record<string, EventDetail> = {
                 ]
             }
         ],
-        schedule: "27th January, 2026 at Swami Vivekananda University"
+        schedule: "27th January, 2026 at Swami Vivekananda University",
+        registrationLink: "https://forms.gle/jJcDiiG9XBBH865cA"
     },
     "creative-gallery": {
         slug: "creative-gallery",
@@ -174,7 +178,8 @@ export const eventsData: Record<string, EventDetail> = {
                     "Handmade crafts and paintings will be available for purchase during the exhibition."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/HoUhQAHrTRRtaQrv6"
     },
     "art-battles": {
         slug: "art-battles",
@@ -219,7 +224,8 @@ export const eventsData: Record<string, EventDetail> = {
                     "Caricatures should display creative exaggeration while maintaining decency."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/K2TdSwX55AThv6NA6"
     },
     "doodleverse": {
         slug: "doodleverse",
@@ -236,12 +242,13 @@ export const eventsData: Record<string, EventDetail> = {
                     "Registration is mandatory."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/RAQ5MiJCvVgxZSjcA"
     },
     "tarader-kotha": {
         slug: "tarader-kotha",
         name: "Tarader Kotha",
-        description: "Theme: Biswer Golpo/Global Icons",
+        description: "Theme: Biswer Golpo, Fashion er Canvas e",
         image: "/assets/events/tarader_kotha.png",
         category: "Fashion",
         rules: [
@@ -262,7 +269,8 @@ export const eventsData: Record<string, EventDetail> = {
                     "Political, religious, or historical portrayals must be handled with respect and sensitivity."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/g9u1YhrczQBGehVa7"
     },
     "photography-exhibition": {
         slug: "photography-exhibition",
@@ -287,7 +295,8 @@ export const eventsData: Record<string, EventDetail> = {
                     "Copyright violations lead to disqualification."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/CsB9UNiiBm8oUiw17"
     },
     "short-film": {
         slug: "short-film",
@@ -307,6 +316,7 @@ export const eventsData: Record<string, EventDetail> = {
                     "Must be original work."
                 ]
             }
-        ]
+        ],
+        registrationLink: "https://forms.gle/Ro4wnA2ijFr1iZ5r5"
     }
 };
